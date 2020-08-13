@@ -7,8 +7,8 @@ import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
+import top.chaser.framework.boot.starter.tkmybatis.example.model.MallInfo;
 import top.chaser.framework.common.base.util.JSONUtil;
-import top.chaser.framework.boot.starter.tkmybatis.example.entity.MallInfo;
 import top.chaser.framework.boot.starter.tkmybatis.example.service.MallInfoService;
 
 import java.util.Arrays;
