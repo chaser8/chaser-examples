@@ -1,3 +1,4 @@
 rootProject.name = "examples"
 include "spring-boot-starter-example"
+include "spring-boot-starter-web-example"
 include "spring-boot-starter-tk-mybatis-example"

@@ -26,25 +26,14 @@ public class Runner implements ApplicationRunner {
 //        System.out.println("Let's inspect the beans provided by Spring Boot:");
         String[] beanNames = ctx.getBeanDefinitionNames();
         Arrays.sort(beanNames);
-//        for (String beanName : beanNames) {
-//            MallInfo mallInfo = new MallInfo();
-//            mallInfo.setAgentId("1");
-//            mallInfo.setCreateDate(new Date());
-//            mallInfo.setCreateSysUserId(1);
-//            mallInfo.setMallCity("cd");
-//            mallInfo.setMallDayLimit(1);
-//            mallInfo.setMallName(beanName);
-//            mallInfo.setMallNbr("123");
-//            mallInfo.setMallType("31");
-//            mallInfo.setRemark("remark");
-//            mallInfo.setStatusCd("1000");
-////            mallInfo.setStatusDate();
-////            mallInfo.setUpdateDate();
-////            mallInfo.setUpdateSysUserId();
-//            mallInfoRepository.insertSelective(mallInfo);
-////            mallInfoRepository.save(mallInfo);
-////            System.out.println(beanName);
-//        }
+        for (String beanName : beanNames) {
+            MallInfo mallInfo = new MallInfo();
+            mallInfo.setAgentId("1");
+            mallInfo.setMallName(beanName);
+            mallInfo.setMallNbr("123");
+            mallInfo.setMallType("31");
+            mallInfoRepository.insertSelective(mallInfo);
+        }
         PageInfo<MallInfo> page = mallInfoRepository.page(new MallInfo(), 3, 1);
 
         log.info(JSONUtil.toPrettyString(page));

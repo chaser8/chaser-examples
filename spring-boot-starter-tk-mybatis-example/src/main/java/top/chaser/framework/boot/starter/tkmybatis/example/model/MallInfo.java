@@ -3,7 +3,7 @@ package top.chaser.framework.boot.starter.tkmybatis.example.model;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
-import top.chaser.framework.boot.starter.tkmybatis.entity.BaseEntity;
+import top.chaser.framework.boot.starter.tkmybatis.model.TkBaseEntity;
 
 import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
@@ -17,7 +17,7 @@ import javax.persistence.Table;
 @Setter
 @ToString
 @Table(name = "MALL_INFO")
-public class MallInfo extends BaseEntity {
+public class MallInfo extends TkBaseEntity {
     private static final long serialVersionUID = 1L;
     /**
      * MALL_ID

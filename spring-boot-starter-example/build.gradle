@@ -1,4 +1,3 @@
 dependencies{
-    implementation "mysql:mysql-connector-java"
     implementation "top.chaser.framework:spring-boot-starter"
 }
