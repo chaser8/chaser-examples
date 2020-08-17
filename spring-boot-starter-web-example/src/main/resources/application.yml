@@ -1,3 +1,4 @@
+
 spring:
   h2:
     console:
@@ -76,3 +77,8 @@ pagehelper:
   reasonable: true
   supportMethodsArguments: true
   params: count=countSql
+chaser:
+  swagger:
+    enable: true
+server:
+  port: 9001

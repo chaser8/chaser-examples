@@ -1,4 +1,4 @@
 dependencies{
     implementation "com.h2database:h2"
-    implementation "top.chaser.framework:spring-boot-starter-tk-mybatis"
+    implementation "top.chaser.framework:spring-boot-starter-tkmybatis"
 }
